@@ -4,8 +4,6 @@
 # Modified:
 # Senthil A
 
-require 'rubygems'
-require 'rake'
 require 'date'
 
 # Helper functions
@@ -53,14 +51,6 @@ task :coverage do
   sh "rm -fr coverage"
   sh "ruby -e \"require 'simplecov'\; SimpleCov.start\" "
   sh "open coverage/index.html"
-end
-
-require 'rdoc/task'
-Rake::RDocTask.new do |rdoc|
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "#{name} #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
 desc "Open an irb session preloaded with this library"
@@ -125,17 +115,4 @@ task :gemspec => :validate do
   spec = [head, manifest, tail].join("  # = MANIFEST =\n")
   File.open(gemspec_file, 'w') { |io| io.write(spec) }
   puts "Updated #{gemspec_file}"
-end
-
-desc "Validate #{gemspec_file}"
-task :validate do
-  libfiles = Dir['lib/*'] - ["lib/#{name}.rb", "lib/#{name}"]
-  unless libfiles.empty?
-    puts "Directory `lib` should only contain a `#{name}.rb` file and `#{name}` dir."
-    exit!
-  end
-  unless Dir['VERSION*'].empty?
-    puts "A `VERSION` file at root level violates Gem best practices."
-    exit!
-  end
 end
