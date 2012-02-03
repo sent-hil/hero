@@ -1,5 +1,5 @@
 require <%= name %>
 
-module <%= class_name %>
+module <%= classname %>
   VERSION = '0.0.1'
 end
