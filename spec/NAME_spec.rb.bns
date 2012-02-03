@@ -1,0 +1,6 @@
+require "<%= name %>"
+
+describe <%= classname %> do
+  it do
+  end
+end
