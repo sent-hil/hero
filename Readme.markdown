@@ -19,6 +19,7 @@ Lastly, just use `-s hero` when creating a new library with bones and you're don
 
 This skeleton and Readme is mostly from Brad Fults's [bones-skeleton-rspec2][1], which was originally inspired by Tom Preston-Werner's [RakeGem][2] and the default [Mr Bones][3] skeleton. I merely updated the Rakefile and customized it to my needs. I encourage you to do the same as well.
 
+ [1]: https://github.com/h3h/bones-skeleton-rspec2
  [2]: http://github.com/mojombo/rakegem
  [3]: http://github.com/TwP/bones
 
