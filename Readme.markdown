@@ -1,6 +1,3 @@
-Gem Skeleton for use with Bones
-===============================
-
 # Usage
 
 First, you'll need Mr Bones installed:
