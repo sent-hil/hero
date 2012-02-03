@@ -89,7 +89,7 @@ task :build => :gemspec do
 end
 
 desc "Generate #{gemspec_file}"
-task :gemspec => :validate do
+task :gemspec do
   # read spec file and split out manifest section
   spec = File.read(gemspec_file)
   head, manifest, tail = spec.split("  # = MANIFEST =\n")
