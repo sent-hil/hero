@@ -11,9 +11,25 @@ Then you'll want to “freeze” this skeleton in your install of Mr Bones, so y
 
     $ bones freeze -r git://github.com/senthilnambi/hero.git hero
 
+    # or
+    $ bones freeze -r ~/path/to/folder/.git hero
+
 Lastly, just use `-s hero` when creating a new library with bones and you're done:
 
     $ bones create -s hero mynewlib
+
+Or you can add an alias to the above command. Add the following line to your `.bash_alias` file or equivalent zsh file (I simply did `source ~/.bash_alias` in my [.zshrc][0])
+
+  [0]: https://github.com/senthilnambi/dotfiles/blob/master/dotfiles/.zshrc#L78
+
+    # change bone and hero to match your names
+    function bone {
+      bones create -s hero mynewlib $1
+    }
+
+And then this works in any terminal. (Remember to restart the terminal for it to load the alias file.)
+
+    $ bone mynewlib
 
 # Inspiration
 
