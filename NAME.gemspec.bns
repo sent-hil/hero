@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.version     = <%= classname %>::VERSION
   s.authors     = ["Senthil A"]
   s.email       = ["senthil196@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/senthilnambi/<%= name %>"
   s.summary     = %q{}
   s.description = %q{}
 
-  s.rubyforge_project = <%= name %>
+  s.rubyforge_project = "<%= name %>"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- spec/*`.split("\n")
@@ -19,4 +19,14 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rspec', '~> 2.8'
   s.add_development_dependency 'rake', '~> 0.9'
+  s.files = %w[
+    Gemfile
+    Rakefile
+    Readme.markdown
+    Spec.markdown
+    <%= name %>.gemspec
+    lib/<%= name %>.rb
+    spec/<%= name %>_spec.rb
+    spec/spec_helper.rb
+  ]
 end
