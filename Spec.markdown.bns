@@ -12,7 +12,7 @@
 
 ## Source
 
-Rox's Git repo is available on GitHub, which can be browsed at:
+<%= classname %>'s git repo is available on GitHub:
 
     https://github.com/senthilnambi/<%= name %>
 
