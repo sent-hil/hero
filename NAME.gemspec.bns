@@ -19,6 +19,8 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rspec', '~> 2.8'
   s.add_development_dependency 'rake', '~> 0.9'
+
+  # = MANIFEST =
   s.files = %w[
     Gemfile
     Rakefile
@@ -29,4 +31,5 @@ Gem::Specification.new do |s|
     spec/<%= name %>_spec.rb
     spec/spec_helper.rb
   ]
+  # = MANIFEST =
 end
