@@ -42,15 +42,11 @@ end
 # Standard tasks
 
 task :default => :spec
-
 require "rspec/core/rake_task"
-
 RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = 'spec/**/*_spec.rb'
   spec.rspec_opts = ['--backtrace']
 end
-
-task :default => :spec
 
 desc "Generate SimpleCov test coverage and open in your browser"
 task :coverage do
@@ -65,11 +61,6 @@ Rake::RDocTask.new do |rdoc|
   rdoc.title = "#{name} #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
-end
-
-desc "Open an irb session preloaded with this library"
-task :console do
-  sh "irb -rubygems -r ./lib/#{name}.rb"
 end
 
 desc "Open an irb session preloaded with this library"
