@@ -22,6 +22,7 @@ You will need these gems to get tests to pass:
 
   * rspec2
   * rake
+  * SimpleCov (optional for coverage)
 
 ## Contributing
 
