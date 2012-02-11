@@ -1,6 +1,6 @@
 require 'spec_helper'
-require "<%= name %>"
+require '<%= name %>'
 
 describe <%= classname %> do
-  it ''
+  it
 end
