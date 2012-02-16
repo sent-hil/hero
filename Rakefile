@@ -51,10 +51,6 @@ task :coverage do
   sh "rake spec COVERAGE=true"
   sh "open coverage/index.html"
 end
-  sh "rm -fr coverage"
-  sh "ruby -e \"require 'simplecov'\; SimpleCov.start\" "
-  sh "open coverage/index.html"
-end
 
 desc "Open an irb session preloaded with this library"
 task :irb do
