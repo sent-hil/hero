@@ -57,7 +57,7 @@ task :irb do
   sh "irb -rubygems -r ./lib/#{name}.rb"
 end
 
-desc "Open an pry session preloaded with this library"
+desc "Open a pry session preloaded with this library"
 task :pry do
   sh "pry -r ./lib/#{name}.rb"
 end
