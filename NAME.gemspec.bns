@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
-require './lib/<%= classname %>/version'
+require './lib/<%= name %>/version'
 
 Gem::Specification.new do |s|
-  s.name        = "<%= name %>"
+  s.name        = "<%= classname %>"
   s.version     = <%= classname %>::VERSION
   s.authors     = ["Senthil A"]
   s.email       = ["senthil196@gmail.com"]
