@@ -1,4 +1,4 @@
-require_relative '<%= name %>/version.rb'
+require_relative '<%= name %>/version'
 
 module <%= classname %>
 end
