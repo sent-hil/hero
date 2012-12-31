@@ -30,6 +30,12 @@ And then this works in any terminal. (Remember to restart the terminal for it to
 
 Use downcase for `mynewlib` or name of the library.
 
+Be sure to remove the following files before using:
+
+  * Readme.markdown
+  * .git/
+  * Licence
+
 # Inspiration
 
 This skeleton and Readme is mostly from Brad Fults's [bones-skeleton-rspec2][1], which was originally inspired by Tom Preston-Werner's [RakeGem][2] and the default [Mr Bones][3] skeleton. I merely updated the Rakefile and customized it to my needs. I encourage you to do the same as well.
