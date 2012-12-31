@@ -21,7 +21,7 @@ Or you can add an alias to the above command. Add the following line to your `.b
 
     # change bone and hero to match your names
     function bone {
-      bones create -s hero mynewlib $1
+      bones create -s hero $1
     }
 
 And then this works in any terminal. (Remember to restart the terminal for it to load the alias file.)
