@@ -34,7 +34,7 @@ Be sure to remove the following files before using:
 
   * Readme.markdown
   * .git/
-  * Licence
+  * License
 
 # Inspiration
 
