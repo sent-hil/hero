@@ -4,9 +4,9 @@ require './lib/<%= name %>/version'
 Gem::Specification.new do |s|
   s.name        = "<%= classname %>"
   s.version     = <%= classname %>::VERSION
-  s.authors     = ["Senthil A"]
-  s.email       = ["senthil196@gmail.com"]
-  s.homepage    = "https://github.com/senthilnambi/<%= name %>"
+  s.authors     = ["sent-hil"]
+  s.email       = ["me@sent-hil.com"]
+  s.homepage    = "https://github.com/sent-hil/<%= name %>"
   s.summary     = %q{}
   s.description = %q{}
 
@@ -19,14 +19,13 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rspec', '~> 2.8'
   s.add_development_dependency 'rake', '~> 0.9'
-  s.add_development_dependency 'simplecov', '~> 0.5'
 
   # = MANIFEST =
   s.files = %w[
     Gemfile
     Rakefile
-    Readme.markdown
-    Spec.markdown
+    readme.md
+    spec.md
     <%= name %>.gemspec
     lib/<%= name %>.rb
     spec/<%= name %>_spec.rb
